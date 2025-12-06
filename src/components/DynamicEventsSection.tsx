@@ -1,14 +1,5 @@
 import EventCard from "@/components/EventCard";
-
-interface EventItem {
-  title: string;
-  location: string;
-  date: string;
-  price: string;
-  discount?: string;
-  category?: string;
-  imageUrl?: string;
-}
+import type { EventItem } from "@/types/events";
 
 const DynamicEventsSection = ({ events }: { events: EventItem[] }) => {
   return (
@@ -19,7 +10,7 @@ const DynamicEventsSection = ({ events }: { events: EventItem[] }) => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-cyan/10 to-magenta/10 border border-cyan/20 text-cyan text-sm font-display font-medium mb-4">🔥 Eventos em Alta</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">Eventos <span className="gradient-text">Imperdíveis</span></h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">Eventos <span className="text-gradient">Imperdíveis</span></h2>
           <p className="text-muted-foreground font-body max-w-2xl mx-auto">Os shows e festivais mais aguardados do Brasil. Garanta seu ingresso com segurança e os melhores preços.</p>
         </div>
 
@@ -36,7 +27,7 @@ const DynamicEventsSection = ({ events }: { events: EventItem[] }) => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="#" className="px-8 py-4 rounded-full border border-border text-foreground font-display font-semibold hover:bg-muted transition-all duration-300 flex items-center gap-2 mx-auto">Ver Todos os Eventos</a>
+          <a href="#" className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-display font-semibold hover:bg-muted transition-all duration-300 max-w-xs">Ver Todos os Eventos</a>
         </div>
       </div>
     </section>

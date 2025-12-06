@@ -1,14 +1,7 @@
 import { Calendar, MapPin } from "lucide-react";
+import type { EventItem } from "@/types/events";
 
-interface EventCardProps {
-  title: string;
-  location: string;
-  date: string;
-  price: string;
-  discount?: string;
-  category?: string;
-  imageUrl?: string;
-}
+type EventCardProps = EventItem;
 
 const EventCard = ({
   title,

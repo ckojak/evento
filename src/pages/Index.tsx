@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DynamicEventsSection from "@/components/DynamicEventsSection";
 import TrustSection from "@/components/TrustSection";
 import TrustBadges from "@/components/TrustBadges";
 import Footer from "@/components/layout/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
-
-interface EventItem {
-  title: string;
-  location: string;
-  date: string;
-  price: string;
-  discount?: string;
-  category?: string;
-  imageUrl?: string;
-}
+import type { EventItem } from "@/types/events";
 
 const LOCAL_KEY = "premierpass_events_v1";
 
@@ -65,7 +56,7 @@ const Index = () => {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan to-magenta flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" fill="hsl(220 20% 8%)"/></svg>
             </div>
-            <span className="font-display font-bold text-lg gradient-text">Premier Pass</span>
+            <span className="font-display font-bold text-lg text-gradient">Premier Pass</span>
           </div>
 
           <div className="flex items-center gap-4">
