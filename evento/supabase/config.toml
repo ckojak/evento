@@ -1,0 +1,13 @@
+project_id = "rbkuplzntpayendbfzud"
+
+[functions.send-transfer-email]
+verify_jwt = false
+
+[functions.create-checkout]
+verify_jwt = false
+
+[functions.send-ticket-email]
+verify_jwt = false
+
+[functions.send-notification]
+verify_jwt = false
