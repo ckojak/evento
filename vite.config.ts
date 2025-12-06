@@ -26,13 +26,18 @@ export default defineConfig({
       output: {
         manualChunks: (id) => {
           if (id.includes("node_modules")) {
-            if (id.includes("react") || id.includes("react-dom")) {
+            if (
+              id.includes("/react/") ||
+              id.includes("/react-dom/") ||
+              id.match(/node_modules[\\/]react[\\/]/) ||
+              id.match(/node_modules[\\/]react-dom[\\/]/)
+            ) {
               return "vendor_react";
             }
             if (
-              id.includes("@radix-ui") ||
-              id.includes("shadcn") ||
-              id.includes("@shadcn")
+              id.includes("/@radix-ui/") ||
+              id.includes("/shadcn/") ||
+              id.includes("/@shadcn/")
             ) {
               return "vendor_ui";
             }
