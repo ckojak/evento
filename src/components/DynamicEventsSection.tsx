@@ -25,28 +25,34 @@ const DynamicEventsSection = ({ events }: { events: EventItem[] }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {events.length === 0 ? (
-            <div className="md:col-span-4 text-center text-muted-foreground">Nenhum evento publicado ainda. Seja o primeiro a publicar!</div>
+            <div className="col-span-full text-center text-muted-foreground">Nenhum evento publicado ainda. Seja o primeiro a publicar!</div>
           ) : (
-            events.map((event, index) => (
-              <div key={index} className="animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <EventCard
-                  id={`local-${index}`}
-                  title={event.title}
-                  date={event.date}
-                  location={event.location}
-                  image={event.imageUrl || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400"}
-                  price={parseFloat(event.price.replace(/[^\d,]/g, '').replace(',', '.')) || 0}
-                  category={event.category || "Geral"}
-                  availableTickets={100}
-                  index={index}
-                />
-              </div>
-            ))
+            events.map((event, index) => {
+              // Parse price: remove currency symbol, handle both . and , as thousand/decimal separators
+              const priceStr = event.price.replace(/[^\d,.]/g, '');
+              const price = parseFloat(priceStr.replace(/\./g, '').replace(',', '.')) || 0;
+              
+              return (
+                <div key={index} className="animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <EventCard
+                    id={`local-${index}`}
+                    title={event.title}
+                    date={event.date}
+                    location={event.location}
+                    image={event.imageUrl || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400"}
+                    price={price}
+                    category={event.category || "Geral"}
+                    availableTickets={100}
+                    index={index}
+                  />
+                </div>
+              );
+            })
           )}
         </div>
 
         <div className="text-center mt-12">
-          <a href="#" className="px-8 py-4 rounded-full border border-border text-foreground font-display font-semibold hover:bg-muted transition-all duration-300 flex items-center gap-2 mx-auto">Ver Todos os Eventos</a>
+          <button className="px-8 py-4 rounded-full border border-border text-foreground font-display font-semibold hover:bg-muted transition-all duration-300">Ver Todos os Eventos</button>
         </div>
       </div>
     </section>

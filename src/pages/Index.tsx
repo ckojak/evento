@@ -57,7 +57,7 @@ const Index = () => {
 
   return (
     <div>
-      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+      {loading && <LoadingScreen onLoadingComplete={() => setLoading(false)} />}
 
       <header className="bg-background border-b border-border">
         <div className="container mx-auto px-6 py-6 flex items-center justify-between">
