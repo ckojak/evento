@@ -25,19 +25,19 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
+          if (
+            id.match(/node_modules[\\/]react[\\/]/) ||
+            id.match(/node_modules[\\/]react-dom[\\/]/)
+          ) {
+            return "vendor_react";
+          }
+          if (
+            id.match(/node_modules[\\/]@radix-ui[\\/]/) ||
+            id.match(/node_modules[\\/]@shadcn[\\/]/)
+          ) {
+            return "vendor_ui";
+          }
           if (id.includes("node_modules")) {
-            if (
-              id.match(/node_modules[\\/]react[\\/]/) ||
-              id.match(/node_modules[\\/]react-dom[\\/]/)
-            ) {
-              return "vendor_react";
-            }
-            if (
-              id.match(/node_modules[\\/]@radix-ui[\\/]/) ||
-              id.match(/node_modules[\\/]@shadcn[\\/]/)
-            ) {
-              return "vendor_ui";
-            }
             return "vendor_other";
           }
         },
