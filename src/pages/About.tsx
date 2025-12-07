@@ -28,8 +28,8 @@ const values = [
 ];
 
 const stats = [
-  { value: "10K+", label: "Eventos realizados" },
-  { value: "500K+", label: "Ingressos vendidos" },
+  { value: "1K+", label: "Eventos realizados" },
+  { value: "50K+", label: "Ingressos vendidos" },
   { value: "1000+", label: "Organizadores" },
   { value: "98%", label: "Satisfação" },
 ];

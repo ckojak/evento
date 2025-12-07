@@ -38,7 +38,7 @@ const SEO = ({
     sameAs: [
       "https://instagram.com/premierpass",
       "https://facebook.com/premierpass",
-      "https://x.com/premierpass",
+
     ],
     contactPoint: {
       "@type": "ContactPoint",
