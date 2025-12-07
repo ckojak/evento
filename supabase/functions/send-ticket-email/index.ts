@@ -287,7 +287,7 @@ serve(async (req) => {
 
                 <!-- CTA Button -->
                 <div style="text-align: center; margin: 32px 0;">
-                  <a href="${Deno.env.get("SUPABASE_URL")?.replace('.supabase.co', '.lovable.app') || 'https://eventix.app'}/meus-ingressos" style="display: inline-block; background: linear-gradient(135deg, #06b6d4, #0891b2); color: #ffffff; text-decoration: none; padding: 16px 40px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 14px rgba(6, 182, 212, 0.4);">
+                  <a href="https://evento-app.vercel.app/meus-ingressos" style="display: inline-block; background: linear-gradient(135deg, #06b6d4, #0891b2); color: #ffffff; text-decoration: none; padding: 16px 40px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 14px rgba(6, 182, 212, 0.4);">
                     Ver meus ingressos
                   </a>
                 </div>
