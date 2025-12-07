@@ -194,7 +194,7 @@ serve(async (req) => {
     logStep("Order items created");
 
     // Create Stripe checkout session
-    const origin = req.headers.get("origin") || "https://evento-app.vercel.app";
+    const origin = req.headers.get("origin") || "https://rbkuplzntpayendbfzud.lovableproject.com";
     
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
