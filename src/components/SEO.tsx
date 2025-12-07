@@ -11,9 +11,9 @@ interface SEOProps {
 }
 
 const defaultMeta = {
-  title: "PremierPass - Descubra e Compre Ingressos para os Melhores Eventos",
+  title: "Premier Pass - Sua Entrada para Experiências Únicas",
   description: "A melhor plataforma para descobrir e comprar ingressos para shows, festivais, teatro, esportes e muito mais. Garanta seu ingresso com segurança!",
-  keywords: "ingressos, eventos, shows, festivais, teatro, esportes, stand-up, comprar ingressos, eventos ao vivo",
+  keywords: "ingressos, eventos, shows, festivais, teatro, esportes, stand-up, comprar ingressos, eventos ao vivo, premier pass",
   image: "/og-image.png",
   url: "https://premierpass.com.br",
 };
@@ -27,17 +27,18 @@ const SEO = ({
   type = "website",
   schema,
 }: SEOProps) => {
-  const fullTitle = title ? `${title} | PremierPass` : defaultMeta.title;
+  const fullTitle = title ? `${title} | Premier Pass` : defaultMeta.title;
 
   const defaultSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "PremierPass",
+    name: "Premier Pass",
     url: url,
     logo: `${url}/logo.png`,
     sameAs: [
       "https://instagram.com/premierpass",
       "https://facebook.com/premierpass",
+      "https://twitter.com/premierpass",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -54,7 +55,7 @@ const SEO = ({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="PremierPass" />
+      <meta name="author" content="Premier Pass" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="Portuguese" />
       <link rel="canonical" href={url} />
@@ -66,7 +67,7 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content="pt_BR" />
-      <meta property="og:site_name" content="PremierPass" />
+      <meta property="og:site_name" content="Premier Pass" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
