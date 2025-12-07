@@ -36,8 +36,8 @@ const SEO = ({
     url: url,
     logo: `${url}/logo.png`,
     sameAs: [
-      "https://instagram.com/eventix",
-      "https://facebook.com/eventix",
+      "https://instagram.com/premierpass",
+      "https://facebook.com/premierpass",
       "https://x.com/premierpass",
     ],
     contactPoint: {
