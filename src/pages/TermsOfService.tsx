@@ -8,7 +8,7 @@ const TermsOfService = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Termos de Serviço"
-        description="Leia os termos de serviço da plataforma PremierPass para compra de ingressos."
+        description="Leia os termos de serviço da plataforma Premier Pass para compra de ingressos."
         url="https://premierpass.com.br/termos"
       />
       <Header />
@@ -27,7 +27,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">1. Aceitação dos Termos</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ao acessar e utilizar a plataforma PremierPass, você concorda com estes Termos de Serviço. 
+                  Ao acessar e utilizar a plataforma Premier Pass, você concorda com estes Termos de Serviço. 
                   Se você não concordar com algum destes termos, não utilize nossos serviços.
                 </p>
               </section>
@@ -35,7 +35,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">2. Descrição dos Serviços</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  A PremierPass é uma plataforma digital que permite a compra e venda de ingressos para eventos. 
+                  A Premier Pass é uma plataforma digital que permite a compra e venda de ingressos para eventos. 
                   Atuamos como intermediários entre organizadores de eventos e consumidores, facilitando 
                   transações seguras.
                 </p>
@@ -60,7 +60,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">5. Taxas de Serviço</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  A PremierPass cobra uma taxa de serviço de 5% sobre o valor de cada ingresso vendido. 
+                  A Premier Pass cobra uma taxa de serviço de 5% sobre o valor de cada ingresso vendido. 
                   Esta taxa cobre os custos de processamento de pagamento e manutenção da plataforma.
                 </p>
               </section>
@@ -78,14 +78,14 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-foreground mb-4">7. Propriedade Intelectual</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Todo o conteúdo da plataforma, incluindo logotipos, textos, imagens e código, 
-                  é propriedade da PremierPass e está protegido por leis de direitos autorais.
+                  é propriedade da Premier Pass e está protegido por leis de direitos autorais.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">8. Modificações</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  A PremierPass reserva-se o direito de modificar estes termos a qualquer momento. 
+                  A Premier Pass reserva-se o direito de modificar estes termos a qualquer momento. 
                   Alterações significativas serão comunicadas aos usuários.
                 </p>
               </section>

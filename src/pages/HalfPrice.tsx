@@ -123,7 +123,7 @@ const HalfPrice = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="gradient-card rounded-2xl p-8"
           >
-            <h2 className="text-2xl font-bold text-foreground mb-4">Como funciona na PremierPass?</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">Como funciona na Premier Pass?</h2>
             <ol className="space-y-4">
               <li className="flex gap-4">
                 <span className="w-8 h-8 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-bold flex-shrink-0">1</span>

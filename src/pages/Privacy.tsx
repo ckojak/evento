@@ -8,7 +8,7 @@ const Privacy = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Política de Privacidade"
-        description="Saiba como a PremierPass protege seus dados pessoais e sua privacidade."
+        description="Saiba como a Premier Pass protege seus dados pessoais e sua privacidade."
         url="https://premierpass.com.br/privacidade"
       />
       <Header />

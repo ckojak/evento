@@ -91,7 +91,7 @@ const Support = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Suporte"
-        description="Central de ajuda e suporte da PremierPass. Tire suas dúvidas sobre compra de ingressos."
+        description="Central de ajuda e suporte da Premier Pass. Tire suas dúvidas sobre compra de ingressos."
         url="https://premierpass.com.br/suporte"
       />
       <Header />

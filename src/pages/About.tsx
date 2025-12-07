@@ -28,8 +28,8 @@ const values = [
 ];
 
 const stats = [
-  { value: "1K+", label: "Eventos realizados" },
-  { value: "50K+", label: "Ingressos vendidos" },
+  { value: "10K+", label: "Eventos realizados" },
+  { value: "500K+", label: "Ingressos vendidos" },
   { value: "1000+", label: "Organizadores" },
   { value: "98%", label: "Satisfação" },
 ];
@@ -39,7 +39,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Sobre Nós"
-        description="Conheça a PremierPass, a plataforma que conecta você aos melhores eventos do Brasil."
+        description="Conheça a Premier Pass, a plataforma que conecta você aos melhores eventos do Brasil."
         url="https://premierpass.com.br/sobre"
       />
       <Header />
@@ -56,7 +56,7 @@ const About = () => {
               <Ticket className="w-10 h-10 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Sobre a <span className="text-gradient">PremierPass</span>
+              Sobre a <span className="text-gradient">Premier Pass</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Somos uma plataforma brasileira de venda de ingressos que nasceu com a missão de 
