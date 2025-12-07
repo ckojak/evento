@@ -1,10 +1,10 @@
-# 📧 Templates de Email - PremierPass
+# 📧 Templates de Email - Eventix
 
-Este diretório contém todos os templates de email personalizados da PremierPass.
+Este diretório contém todos os templates de email personalizados da Eventix.
 
 ## 🎨 Design System
 
-Todos os templates seguem o design system da PremierPass:
+Todos os templates seguem o design system da Eventix:
 
 - **Background**: `#0a0a0a` (preto)
 - **Card Background**: `#18181b` (cinza escuro)
@@ -62,7 +62,7 @@ Todos os templates seguem o design system da PremierPass:
 
 - ✅ Design responsivo
 - ✅ Compatível com todos os clientes de email
-- ✅ Tema escuro seguindo a identidade da PremierPass
+- ✅ Tema escuro seguindo a identidade da Eventix
 - ✅ Botões de ação destacados
 - ✅ Links alternativos para fallback
 - ✅ Avisos de segurança
@@ -72,7 +72,7 @@ Todos os templates seguem o design system da PremierPass:
 
 Para personalizar os templates:
 
-1. **Logo**: Substitua o texto "PremierPass" por uma imagem se preferir
+1. **Logo**: Substitua o texto "Eventix" por uma imagem se preferir
 2. **Cores**: Mantenha consistência com o design system
 3. **Textos**: Adapte as mensagens conforme necessário
 4. **Links**: Certifique-se que os links apontam para as URLs corretas
