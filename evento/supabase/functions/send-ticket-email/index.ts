@@ -65,7 +65,7 @@ serve(async (req) => {
       `).join("");
 
       const emailResponse = await resend.emails.send({
-        from: "Eventix <onboarding@resend.dev>",
+        from: "PremierPass <onboarding@resend.dev>",
         to: [recipientEmail],
         subject: `🎁 Você recebeu ${quantity || 1} ingresso${(quantity || 1) > 1 ? 's' : ''} cortesia para ${eventTitle}`,
         html: `
@@ -82,7 +82,7 @@ serve(async (req) => {
                   
                   <!-- Logo -->
                   <div style="text-align: center; margin-bottom: 32px;">
-                    <h1 style="color: #06b6d4; font-size: 36px; font-weight: 800; margin: 0; letter-spacing: -1px;">Eventix</h1>
+                    <h1 style="color: #06b6d4; font-size: 36px; font-weight: 800; margin: 0; letter-spacing: -1px;">PremierPass</h1>
                     <p style="color: #52525b; font-size: 12px; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 2px;">Ingresso Cortesia</p>
                   </div>
 
@@ -128,7 +128,7 @@ serve(async (req) => {
                   <!-- Footer -->
                   <div style="margin-top: 32px; text-align: center;">
                     <p style="color: #52525b; font-size: 12px; margin: 0;">
-                      © ${new Date().getFullYear()} Eventix. Todos os direitos reservados.
+                      © ${new Date().getFullYear()} PremierPass. Todos os direitos reservados.
                     </p>
                   </div>
                   
@@ -217,7 +217,7 @@ serve(async (req) => {
 
     // Send email
     const emailResponse = await resend.emails.send({
-      from: "Eventix <onboarding@resend.dev>",
+      from: "PremierPass <onboarding@resend.dev>",
       to: [order.customer_email || ""],
       subject: `🎫 Seus ingressos para ${order.events?.title}`,
       html: `
@@ -235,7 +235,7 @@ serve(async (req) => {
                 
                 <!-- Logo -->
                 <div style="text-align: center; margin-bottom: 32px;">
-                  <h1 style="color: #06b6d4; font-size: 36px; font-weight: 800; margin: 0; letter-spacing: -1px;">Eventix</h1>
+                  <h1 style="color: #06b6d4; font-size: 36px; font-weight: 800; margin: 0; letter-spacing: -1px;">PremierPass</h1>
                   <p style="color: #52525b; font-size: 12px; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 2px;">Confirmação de compra</p>
                 </div>
 
@@ -303,7 +303,7 @@ serve(async (req) => {
                 <!-- Footer -->
                 <div style="margin-top: 32px; text-align: center;">
                   <p style="color: #52525b; font-size: 12px; margin: 0;">
-                    © ${new Date().getFullYear()} Eventix. Todos os direitos reservados.
+                    © ${new Date().getFullYear()} PremierPass. Todos os direitos reservados.
                   </p>
                   <p style="color: #52525b; font-size: 11px; margin: 8px 0 0 0;">
                     Este é um email automático. Não responda a esta mensagem.
