@@ -1,102 +1,73 @@
-# Evento - Event Management Platform
+# Welcome to your Lovable project
 
-A modern event management platform built with React, TypeScript, and Supabase.
+## Project info
 
-## Features
+**URL**: https://lovable.dev/projects/66138d1c-0964-4c31-a064-b26db4dd79b2
 
-- 🎫 Event creation and management
-- 💳 Secure payment processing with Stripe
-- 📱 Responsive design
-- 🔐 Authentication and authorization
-- 📊 Admin dashboard
-- 🎨 Beautiful UI with shadcn-ui and Tailwind CSS
+## How can I edit this code?
 
-## Technologies
+There are several ways of editing your application.
 
-This project is built with:
+**Use Lovable**
 
-- **Vite** - Build tool
-- **TypeScript** - Type safety
-- **React** - UI framework
-- **shadcn-ui** - UI components
-- **Tailwind CSS** - Styling
-- **Supabase** - Backend and database
-- **Stripe** - Payment processing
+Simply visit the [Lovable Project](https://lovable.dev/projects/66138d1c-0964-4c31-a064-b26db4dd79b2) and start prompting.
 
-## Getting Started
+Changes made via Lovable will be committed automatically to this repo.
 
-### Prerequisites
+**Use your preferred IDE**
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-- Supabase account
-- Stripe account (for payments)
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### Installation
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
 
 ```sh
-# 1. Clone the repository
+# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-cd evento
 
-# 2. Install dependencies
-npm install
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-# 3. Set up environment variables
-cp .env.example .env
-# Edit .env with your Supabase credentials:
-# VITE_SUPABASE_URL=your_supabase_url
-# VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+# Step 3: Install the necessary dependencies.
+npm i
 
-# 4. Start the development server
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-The application will be available at `http://localhost:8080`
+**Edit a file directly in GitHub**
 
-### Build for Production
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```sh
-npm run build
-```
+**Use GitHub Codespaces**
 
-## Deployment
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-### Deploy to Vercel
+## What technologies are used for this project?
 
-The easiest way to deploy this project is using Vercel:
+This project is built with:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ckojak/evento)
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-1. Push your code to GitHub
-2. Import your repository in [Vercel](https://vercel.com)
-3. Configure environment variables in Vercel dashboard
-4. Deploy!
+## How can I deploy this project?
 
-### Environment Variables for Deployment
+Simply open [Lovable](https://lovable.dev/projects/66138d1c-0964-4c31-a064-b26db4dd79b2) and click on Share -> Publish.
 
-Make sure to set these environment variables in your Vercel project:
+## Can I connect a custom domain to my Lovable project?
 
-- `VITE_SUPABASE_URL` - Your Supabase project URL
-- `VITE_SUPABASE_ANON_KEY` - Your Supabase anonymous key
+Yes, you can!
 
-## Project Structure
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-```
-evento/
-├── src/
-│   ├── components/     # React components
-│   ├── pages/          # Page components
-│   ├── hooks/          # Custom React hooks
-│   ├── lib/            # Utility functions
-│   └── integrations/   # Third-party integrations
-├── supabase/          # Supabase functions and migrations
-└── public/            # Static assets
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is private and proprietary.
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

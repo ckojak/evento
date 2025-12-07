@@ -15,12 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Outfit', 'sans-serif'],
-        display: ['Outfit', 'sans-serif'],
-        body: ['Outfit', 'sans-serif'],
       },
       colors: {
-        cyan: "hsl(190, 90%, 50%)",
-        magenta: "hsl(330, 85%, 60%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -103,10 +99,6 @@ export default {
           "0%, 100%": { opacity: "0.4" },
           "50%": { opacity: "1" },
         },
-        "fade-up": {
-          from: { opacity: "0", transform: "translateY(20px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -117,7 +109,6 @@ export default {
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "loading-bar": "loading-bar 2s ease-in-out forwards",
         "pulse-glow": "pulse-glow 1.5s ease-in-out infinite",
-        "fade-up": "fade-up 0.6s ease-out forwards",
       },
     },
   },
