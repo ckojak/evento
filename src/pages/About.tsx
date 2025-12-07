@@ -28,8 +28,8 @@ const values = [
 ];
 
 const stats = [
-  { value: "10K+", label: "Eventos realizados" },
-  { value: "500K+", label: "Ingressos vendidos" },
+  { value: "1K+", label: "Eventos realizados" },
+  { value: "50K+", label: "Ingressos vendidos" },
   { value: "1000+", label: "Organizadores" },
   { value: "98%", label: "Satisfação" },
 ];
@@ -39,8 +39,8 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Sobre Nós"
-        description="Conheça a Eventix, a plataforma que conecta você aos melhores eventos do Brasil."
-        url="https://eventix.com.br/sobre"
+        description="Conheça a PremierPass, a plataforma que conecta você aos melhores eventos do Brasil."
+        url="https://premierpass.com.br/sobre"
       />
       <Header />
       <main className="pt-24 pb-16">
