@@ -56,7 +56,7 @@ const About = () => {
               <Ticket className="w-10 h-10 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Sobre a <span className="text-gradient">Eventix</span>
+              Sobre a <span className="text-gradient">PremierPass</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Somos uma plataforma brasileira de venda de ingressos que nasceu com a missão de 
